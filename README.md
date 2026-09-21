@@ -31,8 +31,7 @@
 │   └── run_tx_aware_mlp.py
 ├── data/                    # 数据说明、生成数据和数据可视化
 ├── results/                 # 配置、逐次结果、汇总表和实验图
-├── report/                  # 中文 LaTeX 报告及配图
-├── docs/PROJECT_PROGRESS.md # 实验过程和后续计划
+├── report/figures/          # README 使用的实验配图
 └── pyproject.toml           # Python 项目与依赖配置
 ```
 
@@ -144,13 +143,11 @@ Fourier MLP 拟合补偿后的较平滑复数场，预测完成后再恢复原�
 
 所有指标只在“未观测且有效”的空间位置上统计，并同时覆盖全部子载波。
 
-## 结果与报告
+## 实验结果
 
 - 汇总结果：`results/*/*summary.csv`
 - 运行参数：`results/*/*metadata.json`
 - 选定配置：`results/*/selected_config.json`
-- 完整中文报告：`report/main.tex`
-- 实验过程记录：[`docs/PROJECT_PROGRESS.md`](docs/PROJECT_PROGRESS.md)
 
 ![Metric comparison](report/figures/tx_aware_comparison_curves.png)
 
