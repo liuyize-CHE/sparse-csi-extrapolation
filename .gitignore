@@ -1,3 +1,23 @@
 .venv/
 .tools/
 __pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.vscode/
+.DS_Store
+
+build/
+dist/
+tmp/
+output/
+
+# Local paper-reproduction workspace; not part of this repository.
+RadioDiff_Reproduction/
+
+# Large training artifacts should be published separately when needed.
+*.ckpt
+*.pth
+*.pt

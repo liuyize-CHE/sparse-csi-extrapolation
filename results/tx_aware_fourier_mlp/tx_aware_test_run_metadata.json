@@ -1,0 +1,43 @@
+{
+  "dataset": "C:\\Users\\Lenovo\\Desktop\\RadioDiff-Research-Assessment\\Research_Task\\data\\processed\\initial_csi_dataset.npz",
+  "split": "test",
+  "scene_indices": [
+    6,
+    8
+  ],
+  "sampling_rates": [
+    0.05,
+    0.1,
+    0.2
+  ],
+  "repeats": 5,
+  "seed": 2026,
+  "device": "cuda",
+  "config": {
+    "max_frequency_cpm": 1.0,
+    "frequency_band_count": 6,
+    "direction_count": 8,
+    "hidden_width": 128,
+    "hidden_depth": 3,
+    "learning_rate": 0.001,
+    "weight_decay": 1e-06,
+    "max_epochs": 2500,
+    "patience": 200,
+    "validation_fraction": 0.2
+  },
+  "phase_compensation_uses": [
+    "tx_position",
+    "receiver_position",
+    "frequency"
+  ],
+  "phase_compensation_does_not_use": [
+    "scatterer_position",
+    "reflection_coefficient",
+    "unobserved_csi"
+  ],
+  "reported_metrics": [
+    "nmse_db",
+    "amplitude_nmae",
+    "phase_mae_rad"
+  ]
+}

@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sparse-csi-extrapolation"
+version = "0.1.0"
+description = "Reproducible sparse spatial CSI extrapolation experiments"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "matplotlib>=3.7,<4",
+    "numpy>=1.23,<3",
+    "scipy>=1.10,<2",
+    "torch>=2.0",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]

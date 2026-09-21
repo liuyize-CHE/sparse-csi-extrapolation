@@ -1,0 +1,23 @@
+{
+  "dataset": "C:\\Users\\Lenovo\\Desktop\\RadioDiff-Research-Assessment\\data\\processed\\initial_csi_dataset.npz",
+  "split": "test",
+  "scene_indices": [
+    6,
+    8
+  ],
+  "sampling_rates": [
+    0.05,
+    0.1,
+    0.2
+  ],
+  "repeats": 5,
+  "seed": 2026,
+  "method": "complex_linear",
+  "boundary_fill": "nearest measured position",
+  "reported_metrics": [
+    "nmse_db",
+    "amplitude_nmae",
+    "phase_mae_rad"
+  ],
+  "spatial_measurement_reveals_all_subcarriers": true
+}

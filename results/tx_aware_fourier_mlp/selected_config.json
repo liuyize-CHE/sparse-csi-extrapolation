@@ -1,0 +1,54 @@
+{
+  "max_frequency_cpm": 1.0,
+  "frequency_band_count": 6,
+  "direction_count": 8,
+  "hidden_width": 128,
+  "hidden_depth": 3,
+  "learning_rate": 0.001,
+  "weight_decay": 1e-06,
+  "max_epochs": 2500,
+  "patience": 200,
+  "validation_fraction": 0.2,
+  "selection_split": "validation",
+  "validation_scene_indices": [
+    1,
+    7
+  ],
+  "selection_sampling_rate": 0.1,
+  "selection_repeats": 2,
+  "candidate_means": {
+    "1.0": {
+      "nmse_db": -16.920969675484898,
+      "amplitude_nmae": 0.12041682162610254,
+      "phase_mae_rad": 0.1882515661418438
+    },
+    "2.0": {
+      "nmse_db": -16.0332173171709,
+      "amplitude_nmae": 0.13943590597683125,
+      "phase_mae_rad": 0.19075020402669907
+    },
+    "4.0": {
+      "nmse_db": -6.567885002163356,
+      "amplitude_nmae": 0.39028782822849983,
+      "phase_mae_rad": 0.1910528540611267
+    },
+    "8.0": {
+      "nmse_db": -2.192981439129038,
+      "amplitude_nmae": 0.6853354321147751,
+      "phase_mae_rad": 0.20287549123167992
+    },
+    "12.0": {
+      "nmse_db": -2.198166012845888,
+      "amplitude_nmae": 0.698056842909565,
+      "phase_mae_rad": 0.20771925896406174
+    }
+  },
+  "eligibility_rule": "amplitude_nmae < 0.8 and phase_mae_rad < pi/2",
+  "eligible_frequencies_cpm": [
+    1.0,
+    2.0,
+    4.0,
+    8.0,
+    12.0
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "dataset": "C:\\Users\\Lenovo\\Desktop\\RadioDiff-Research-Assessment\\Research_Task\\data\\processed\\initial_csi_dataset.npz",
+  "split": "test",
+  "scene_indices": [
+    6,
+    8
+  ],
+  "sampling_rates": [
+    0.05,
+    0.1,
+    0.2
+  ],
+  "repeats": 5,
+  "seed": 2026,
+  "device": "cuda",
+  "config_path": "C:\\Users\\Lenovo\\Desktop\\RadioDiff-Research-Assessment\\Research_Task\\results\\fourier_mlp\\selected_config.json",
+  "config": {
+    "max_frequency_cpm": 12.0,
+    "frequency_band_count": 6,
+    "direction_count": 8,
+    "hidden_width": 128,
+    "hidden_depth": 3,
+    "learning_rate": 0.001,
+    "weight_decay": 1e-06,
+    "max_epochs": 2500,
+    "patience": 200,
+    "validation_fraction": 0.2
+  },
+  "reported_metrics": [
+    "nmse_db",
+    "amplitude_nmae",
+    "phase_mae_rad"
+  ],
+  "spatial_measurement_reveals_all_subcarriers": true
+}

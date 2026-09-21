@@ -1,0 +1,58 @@
+{
+  "csi_shape": [
+    10,
+    8,
+    101,
+    101
+  ],
+  "csi_dtype": "complex64",
+  "all_finite": true,
+  "grid_spacing_m": 0.04,
+  "shortest_wavelength_m": 0.09966777408637874,
+  "spatial_nyquist_spacing_m": 0.04983388704318937,
+  "spatial_nyquist_check_passed": true,
+  "mean_amplitude": 0.7449305653572083,
+  "median_amplitude": 0.44420117139816284,
+  "maximum_amplitude": 14.593184471130371,
+  "mean_adjacent_subcarrier_difference": 0.051878832280635834,
+  "minimum_mean_scene_difference_from_scene0": 1.2627547979354858,
+  "train_scenes": [
+    0,
+    2,
+    3,
+    4,
+    5,
+    9
+  ],
+  "validation_scenes": [
+    1,
+    7
+  ],
+  "test_scenes": [
+    6,
+    8
+  ],
+  "config": {
+    "seed": 2026,
+    "num_scenes": 10,
+    "num_subcarriers": 8,
+    "num_reflectors": 3,
+    "grid_size": 101,
+    "region_size_m": 4.0,
+    "center_frequency_hz": 3000000000.0,
+    "bandwidth_hz": 20000000.0,
+    "epsilon_m": 0.05,
+    "minimum_valid_distance_m": 0.15,
+    "tx_margin_m": 0.6,
+    "scatterer_margin_m": 0.2,
+    "minimum_tx_scatterer_distance_m": 0.5,
+    "minimum_scatterer_separation_m": 0.3,
+    "path_loss_exponent_min": 2.6,
+    "path_loss_exponent_max": 3.4,
+    "reflection_magnitude_min": 0.25,
+    "reflection_magnitude_max": 0.65
+  },
+  "dataset_file": "initial_csi_dataset.npz",
+  "dataset_size_bytes": 6074274,
+  "sha256": "aa195b3b9b4437ed642a4674c9a96089f36ae28b0416aa24cc8ec9f59f477939"
+}
